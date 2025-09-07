@@ -1,17 +1,1 @@
-venv1/ # we put this because virtual environments should not be tracked by git; they contain project-specific dependencies. 
-# macOS system files
-.DS_Store
-
-# Python cache
-__pycache__/
-*.pyc
-
-# Virtual environments
-venv/
-.env/
-
-# VS Code settings
-.vscode/
-
-# Jupyter notebook checkpoints
-.ipynb_checkpoints/
+venv1/
