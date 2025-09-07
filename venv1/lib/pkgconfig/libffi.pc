@@ -1,0 +1,11 @@
+prefix=/Users/ankurpal/Desktop/Ankur Record/Projects/Project1.0/sensorprojects/venv
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}
+includedir=/Users/ankurpal/Desktop/Ankur Record/Projects/Project1.0/sensorprojects/venv/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.4.4
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}
