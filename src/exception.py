@@ -1,4 +1,4 @@
-import sys. # sys module is interacted with the Python interpreter.
+import sys # sys module is interacted with the Python interpreter.
 # it will connect property, method, function to the interpreter.
 
 def error_msg_detail(error_msg, error_details: sys):
@@ -28,7 +28,7 @@ def error_msg_detail(error_msg, error_details: sys):
 class CustomException(Exception):
     def __init__(self, error_msg, error_detail: sys):
         super().__init__(error_msg) # here super() fn is used to access properties of parent class i.e 'Exception' class.
-        self.error_msg = error_msg_detail(error_msg, error_detail=error_detail)
+        self.error_msg = error_msg_detail(error_msg, error_details=error_detail)
         # here we are calling the fn 'error_msg_detail' which take two parameters.
         # first is 'error_msg' which is passed while creating the object of this class.
         # second is 'error_msg_details' which is the sys module.

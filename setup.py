@@ -11,7 +11,7 @@ def get_requirements(file_path:str) -> List[str]: # here we are defining a funct
         requirements=file_obj.readlines() # here we are reading all the lines in the file and storing them in a list.
         requirements=[req.replace("\n","") for req in requirements]
 
-    if HYPEN_E_DOT in requirements:  # here we are checking if -e. is present in the list of dependencies.
+    if HYPEN_E_DOT in requirements:  # here we are checking if -e. is present in the list of dependencies or requirements.txt file.
         requirements.remove(HYPEN_E_DOT) # we remove -e. from the list of dependencies because it is not a valid dependency.
     return requirements
 

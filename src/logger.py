@@ -2,7 +2,7 @@ import logging # it used to keep track of the events log messages that happen du
 import os # it provides functionality to read and write to file system.
 from datetime import datetime # it provides functionality to work with date and time.
 
-LOG_FILE = f"{datetime.now().strtime("%d_%m_%y_%h_%m_%s")}.log" # here we are creating a log file with current date and time.
+LOG_FILE = f"{datetime.now().strftime("%d_%m_%y_%h_%m_%s")}.log" # here we are creating a log file with current date and time.
 
 logs_path = os.path.join(os.getcwd(), "logs", LOG_FILE) # here we are creating a path for the log file in the logs directory.
 # here we mention how our logpath will look like.
