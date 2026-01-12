@@ -1,6 +1,6 @@
 import os # it helps to interact with the operating system. reading or writing to the file system.
 
-AWS_S3_BUCKET_NAME = "wafer-fault"
+AWS_S3_BUCKET_NAME = "wafer-fault3"
 MONGO_DATABASE_NAME = "sensor"
 MONGO_COLLECTION_NAME = "faultdetect"
 
