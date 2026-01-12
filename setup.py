@@ -36,3 +36,7 @@ setup(
 # we can create a test filt the test the package. in this we rerunt the command 'python setup.py install' and check the pip list.
 # we can see that in fault-detection file test file is created as package. this can be seen in fault_detection.egg-info>>Sources.txt as package.
 # we  can install the dependencies by adding -e. . in requirements.txt file. this will install the dependencies directly from the file.
+
+
+
+#updating something
