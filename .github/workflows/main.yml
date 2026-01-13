@@ -77,9 +77,7 @@ jobs:
 
             - name: Stop existing container
               run: |
-                  docker ps -q --filter "name=sensorprojects" | grep -q . \
-                  && docker stop sensorprojects && docker rm sensorprojects \
-                  || echo "No existing container"
+                  docker rm -f sensorprojects || true
 
             - name: Pull Latest Images
               run: |
