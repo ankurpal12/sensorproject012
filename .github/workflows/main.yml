@@ -80,6 +80,12 @@ jobs:
               id: login-ecr    
               uses: aws-actions/amazon-ecr-login@v1
 
+            - name: Stop existing container
+              run: |
+                docker ps -q --filter "name=sensorprojects" | grep -q . \
+                && docker stop sensorprojects && docker rm sensorprojects \
+                || echo "No existing container"
+
             - name: Pull Latest Images
               run:
                 docker pull ${{ secrets.AWS_ECR_REPO_URI }}:latest
